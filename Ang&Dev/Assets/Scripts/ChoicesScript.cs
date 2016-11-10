@@ -19,7 +19,7 @@ public class ChoicesScript : MonoBehaviour
 	{
 		
 	}
-	void demonPress ()
+	public void demonAlarmPress ()
 	{
 		
 	}
