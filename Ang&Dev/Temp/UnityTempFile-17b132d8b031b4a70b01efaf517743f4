@@ -85,7 +85,7 @@
 -define:UNITY_EDITOR_64
 -define:UNITY_EDITOR_OSX
 -define:UNITY_TEAM_LICENSE
-'Assets/Scripts/Camera.cs'
+'Assets/Scripts/CameraScript.cs'
 'Assets/Scripts/ChoicesScript.cs'
 'Assets/Scripts/MenuScript.cs'
 'Assets/Scripts/Move.cs'

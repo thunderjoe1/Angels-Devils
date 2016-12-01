@@ -10,13 +10,11 @@ public class Move : MonoBehaviour
 
 	void Update ()
 	{
-		float translation = Input.GetAxis ("Vertical") * speed;
-		float rotation = Input.GetAxis ("Mouse X") * speed;
+		float translationZ = Input.GetAxis ("Vertical") * speed * Time.deltaTime;
+		float translationX = Input.GetAxis ("Horizontal") * speed * Time.deltaTime;
+		float rotation = Input.GetAxis ("Mouse X") * rotSpeed * Time.deltaTime;
 
-
-		translation *= Time.deltaTime * speed;
-		rotation *= Time.deltaTime * rotSpeed;
-		transform.Translate (0, 0, translation);
+		transform.Translate (translationX, 0, translationZ);
 		transform.Rotate (0, rotation, 0);
 	}
 
